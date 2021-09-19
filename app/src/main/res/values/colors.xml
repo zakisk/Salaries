@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F9A602</color>
+    <color name="colorPrimaryDark">#e1f8dc</color>
+    <color name="colorAccent">#F9A602</color>
+    <color name="button">#6200EE</color>
+    <color name="windowBackgroundColor">#3A3939</color>
+    <color name="listLayoutColor">#37000000</color>
+    <color name="transactionLayoutColor">#FF424242</color>
+    <color name="silver">#656565</color>
+    <color name="buttonBackgroundColor">#404040</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MainFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/manage_employees_button"
+        style="@style/buttonStyle"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:paddingVertical="16dp"
+        android:drawableTop="@drawable/ic_employees"
+        android:text="@string/manage_employees"
+        app:layout_constraintBottom_toTopOf="@+id/transactions_button"
+        app:layout_constraintEnd_toStartOf="@+id/main_pay_button"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_salaries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/main_pay_button"
+        style="@style/buttonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="32dp"
+        android:paddingVertical="16dp"
+        android:drawableTop="@drawable/payment"
+        android:text="@string/pay"
+        app:layout_constraintBottom_toTopOf="@+id/help_button"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/manage_employees_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/transactions_button"
+        style="@style/buttonStyle"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:paddingVertical="16dp"
+        android:drawableTop="@drawable/transactions"
+        android:text="@string/transactions"
+        app:layout_constraintEnd_toStartOf="@+id/help_button"
+        app:layout_constraintStart_toStartOf="@+id/manage_employees_button"
+        app:layout_constraintTop_toBottomOf="@+id/manage_employees_button" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/help_button"
+        style="@style/buttonStyle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:paddingVertical="16dp"
+        android:drawableTop="@drawable/ic_help"
+        android:text="@string/help"
+        app:layout_constraintEnd_toEndOf="@+id/main_pay_button"
+        app:layout_constraintStart_toEndOf="@+id/transactions_button"
+        app:layout_constraintTop_toBottomOf="@+id/main_pay_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

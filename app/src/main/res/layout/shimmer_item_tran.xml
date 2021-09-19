@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:backgroundTint="@color/transactionLayoutColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="8dp">
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:background="@color/listLayoutColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                                         "
+                android:background="@color/colorPrimary"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8dp"
+            android:textSize="8sp"
+            android:text="                                                           "
+            android:background="@color/silver"
+            app:layout_constraintStart_toStartOf="@id/nameLayout"
+            app:layout_constraintTop_toBottomOf="@id/nameLayout"/>
+
+
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textSize="8sp"
+            android:background="@color/silver"
+            android:text="                                   "
+            app:layout_constraintTop_toBottomOf="@id/Date"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/Current_Credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginVertical="4dp"
+            android:text="                                     "
+            android:textSize="8sp"
+            android:background="@color/silver"
+            app:layout_constraintTop_toBottomOf="@id/Amount"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                                     "
+            android:textSize="8sp"
+            android:background="@color/silver"
+            android:layout_marginVertical="4dp"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/Amount"
+            app:layout_constraintEnd_toStartOf="@id/Current_Credit"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

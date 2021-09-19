@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "671151387929",
+    "firebase_url": "https://salaries-25a3d.firebaseio.com",
+    "project_id": "salaries-25a3d",
+    "storage_bucket": "salaries-25a3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671151387929:android:11b9bd429c97f68b7e0188",
+        "android_client_info": {
+          "package_name": "com.example.salaries"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671151387929-fnu0rb42l994csv2oin21069eq9ann44.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpN5UN1AfVIIsrFaoui8JUdUffk95NJ4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671151387929-fnu0rb42l994csv2oin21069eq9ann44.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

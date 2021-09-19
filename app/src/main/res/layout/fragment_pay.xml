@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PayFragment">
+
+
+        <TextView
+            android:id="@+id/payee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:layout_marginTop="40dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/balance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Balance : "
+                app:layout_constraintTop_toBottomOf="@id/payee_name"
+                app:layout_constraintStart_toStartOf="@id/payee_name"
+                app:layout_constraintEnd_toStartOf="@id/payee_balance"/>
+
+            <TextView
+                android:id="@+id/payee_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sample_amount"
+                app:layout_constraintTop_toBottomOf="@id/payee_name"
+                app:layout_constraintStart_toEndOf="@id/balance_text"
+                app:layout_constraintEnd_toEndOf="@id/payee_name"/>
+
+            <TextView
+                android:id="@+id/credit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Credit : "
+                app:layout_constraintTop_toBottomOf="@id/balance_text"
+                app:layout_constraintStart_toStartOf="@id/balance_text"
+                app:layout_constraintEnd_toStartOf="@id/payee_credit"/>
+            <TextView
+                android:id="@+id/payee_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sample_amount"
+                app:layout_constraintTop_toBottomOf="@id/payee_balance"
+                app:layout_constraintStart_toEndOf="@id/credit_text"
+                app:layout_constraintEnd_toEndOf="@id/payee_balance"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                app:startIconDrawable="@drawable/ic_rupee"
+                style="@style/Salaries.TextInputLayoutStyle"
+                app:layout_constraintTop_toBottomOf="@id/credit_text"
+                app:layout_constraintStart_toStartOf="@id/credit_text"
+                app:layout_constraintEnd_toEndOf="@id/payee_credit">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amount_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:inputType="number"
+                    android:hint="@string/amount"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pay_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/pay"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/amount_layout"
+                app:layout_constraintStart_toStartOf="@id/amount_layout"
+                app:layout_constraintEnd_toEndOf="@id/amount_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
